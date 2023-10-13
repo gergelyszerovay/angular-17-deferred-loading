@@ -1,0 +1,65 @@
+<h3>&#64;defer when</h3>
+
+<div>
+  <input #checkboxDefer type="checkbox" [checked]="isCheckedDefer()" (change)="isCheckedDefer.set(checkboxDefer.checked)" id="checkboxDefer"/>
+  <label for="checkboxDefer">Open the network tab of the browser's developer tools, then check this checkbox to load the <strong>app-c1</strong> component</label>
+</div>
+<br>
+
+@defer (when isCheckedDefer()) {
+  <app-c1/>
+}
+@placeholder {
+  <span>Placeholder</span>
+}
+@error {
+  <span>Error</span>
+}
+@loading(minimum 1s) {
+  <span>Loading...</span>
+}
+
+<h3>&#64;defer on interaction</h3>
+
+@defer (on interaction) {
+  <span>Clicked</span>
+}
+@placeholder {
+  <span>Placeholder (click on it!)</span>
+}
+
+<h3>&#64;defer on hover</h3>
+
+@defer (on hover) {
+  <span>Hovered</span>
+}
+@placeholder {
+  <span>Placeholder (hover it!)</span>
+}
+
+<h3>&#64;defer on idle</h3>
+
+@defer (on idle) {
+  <span>Browser has reached an idle state</span>
+}
+@placeholder {
+  <span>Placeholder</span>
+}
+
+<h3>&#64;defer on viewport</h3>
+
+@defer (on idle) {
+  <app-c2 text="The block entered the viewport"/>
+}
+@placeholder {
+  <span>Placeholder</span>
+}
+
+<h3>&#64;defer on timer(5s)</h3>
+
+@defer (on timer(5s)) {
+  <span>Visible after 5s</span>
+}
+@placeholder {
+  <span>Placeholder</span>
+}
