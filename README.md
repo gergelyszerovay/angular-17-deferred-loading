@@ -1,4 +1,4 @@
-# angular-17-control-flow-deferred-loading
+# angular-17-deferred-loading
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0-next.8.
 
