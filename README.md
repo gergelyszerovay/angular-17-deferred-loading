@@ -1,6 +1,5 @@
-# angular-17-deferred-loading
+This is the application with the examples for my [New Angular v17 feature: deferred loading](https://www.angularaddicts.com/p/angular-17-feature-deferred-loading-with-signal) article.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0-next.8.
 
 ## Development server
 
